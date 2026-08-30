@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: vedaai-grade-assistant-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false          # Set manually in Render dashboard
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
+      - key: GROQ_API_KEY
+        sync: false          # Set manually in Render dashboard
+      - key: GROQ_MODEL
+        value: llama-3.2-90b-vision-preview
+      - key: ALLOWED_ORIGINS
+        sync: false          # Set to your Vercel URL after deployment
