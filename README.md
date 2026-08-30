@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)](https://python.org)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Gemini](https://img.shields.io/badge/Gemini-1.5_Flash-4285F4?logo=google&logoColor=white)](https://aistudio.google.com)
+[![Gemini](https://img.shields.io/badge/Gemini-3.6_Flash-4285F4?logo=google&logoColor=white)](https://aistudio.google.com)
 
 ---
 
@@ -42,7 +42,7 @@ VedaAI Grade Assistant solves a real teacher pain-point: manually reading, locat
 | Feature | Description |
 |---|---|
 | 📄 **PDF & Image support** | Upload question papers and answer sheets as PDF, JPEG, PNG, WEBP, or TIFF |
-| 🤖 **Gemini Vision AI** | Uses Google Gemini 1.5 Flash (multimodal) for OCR + grading |
+| 🤖 **Gemini Vision AI** | Uses Google Gemini 3.6 Flash (multimodal) for OCR + grading |
 | 🔄 **Groq fallback** | Automatically falls back to Groq (Llama 3.2 90B Vision) if all Gemini keys are exhausted |
 | 🔑 **API key rotation** | Supports up to 3 Gemini API keys (`GEMINI_API_KEY_1/2/3`) with automatic rotation on quota errors |
 | 🎯 **Bounding box mapping** | Pixel-accurate highlight boxes returned as `%` of page dimensions — works at any resolution |
@@ -77,7 +77,7 @@ VedaAI Grade Assistant solves a real teacher pain-point: manually reading, locat
                            │
               ┌────────────┴────────────┐
               ▼                         ▼
-     Google Gemini 1.5 Flash        Groq (fallback)
+     Google Gemini 3.6 Flash        Groq (fallback)
      (primary, with key rotation)   Llama 3.2 90B Vision
 ```
 
@@ -266,7 +266,7 @@ App available at: `http://localhost:5173`
 | Key | Value |
 |---|---|
 | `GEMINI_API_KEY` | Your Gemini API key |
-| `GEMINI_MODEL` | `gemini-1.5-flash` |
+| `GEMINI_MODEL` | `gemini-3.6-flash` |
 | `GROQ_API_KEY` | Your Groq API key |
 | `ALLOWED_ORIGINS` | Your Vercel frontend URL (set after deploying frontend) |
 
