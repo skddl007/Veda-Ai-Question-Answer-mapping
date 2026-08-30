@@ -1,0 +1,6 @@
+# Design assets — tracked separately, not in Git
+Frontend/Figma design/
+
+# OS
+.DS_Store
+Thumbs.db
