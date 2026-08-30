@@ -351,7 +351,7 @@ Accepts a multipart form upload and returns graded questions with answer sheet i
 | `GEMINI_API_KEY_1` | No | — | Additional Gemini key (rotation) |
 | `GEMINI_API_KEY_2` | No | — | Additional Gemini key (rotation) |
 | `GEMINI_API_KEY_3` | No | — | Additional Gemini key (rotation) |
-| `GEMINI_MODEL` | No | `gemini-1.5-flash` | Gemini model name |
+| `GEMINI_MODEL` | No | `gemini-3.6-flash` | Gemini model name |
 | `GROQ_API_KEY` | No | — | Groq API key (fallback) |
 | `GROQ_MODEL` | No | `llama-3.2-90b-vision-preview` | Groq model name |
 | `ALLOWED_ORIGINS` | No | `http://localhost:5173,...` | Comma-separated CORS origins |
